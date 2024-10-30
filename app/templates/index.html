@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styless.css') }}">
+ <div class="container">
+            <h1>ClimaTempo</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h2>Bem-vindo ao ClimaTempo</h2>
+                <p>Sua fonte confiável para previsões meteorológicas precisas e atualizadas.</p>
+
+                <form class="search-form">
+                    <input type="text" placeholder="Pesquisar local..." aria-label="Pesquisar local">
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+
+            <div class="weather-grid">
+                <div class="weather-card">
+                    <img src="../static/sol.png" alt="Ícone de sol" aria-hidden="true">
+                    <h3>Ensolarado</h3>
+                    <p>28°C</p>
+                </div>
+                <div class="weather-card">
+                    <img src="../static/nuvens-e-sol.png" alt="Ícone de nuvem" aria-hidden="true">
+                    <h3>Nublado</h3>
+                    <p>22°C</p>
+                </div>
+                <div class="weather-card">
+                    <img src="../static/nublado.png" alt="Ícone de chuva" aria-hidden="true">
+                    <h3>Chuvoso</h3>
+                    <p>18°C</p>
+                </div>
+                <div class="weather-card">
+                    <img src="../static/vento.png" alt="Ícone de vento" aria-hidden="true">
+                    <h3>Ventoso</h3>
+                    <p>20°C</p>
+                </div>
+            </div>
+
+            <section class="newsletter">
+                <h3>Receba Atualizações do Clima</h3>
+                <form>
+                   <button type="submit"> <a href="/cadastro"> Cadastra-se já </a> </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+  <br><br>
+
+
+{% endblock %}

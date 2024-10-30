@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<div>
+    <div class="form">
+     <form action="/excluirco" method="POST">
+            <h3> Excluir dados </h3>
+
+      <div class="flex-column">
+      <label> CPF: </label>
+      <input class="texto" type="text" name="cpf" id="cpf" /><br><br>
+
+        <button type="submit" class="botao"> Excluir </button>
+        <br><br>
+     </form>
+    </div>
+</div>
+</div>
+
+  <br>
+<br>
+
+
+{% endblock %}

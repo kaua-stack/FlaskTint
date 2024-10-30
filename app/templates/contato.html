@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylesss.css') }}">
+
+
+ <div class="container-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Entre em contato
+				</span>
+
+				<label class="label-input100" for="first-name">Seu nome </label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="Primerio Nome">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+					<input class="input100" type="text" name="last-name" placeholder="SobreNome">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email">Informe seu Email</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="Ex: example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Informe o numero de telefone</label>
+				<div class="wrap-input100">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Ex: (11)98888-7777">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message">Envie um coméntario </label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea id="message" class="input100" name="message" placeholder="Fale sobre o assunto"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Enviar
+					</button>
+				</div>
+			</form>
+ <div/>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<div>
+    <div class="form">
+    <form action="/consultarCo" method="POST">
+     <h3>Consultar </h3>
+
+      <div class="flex-column">
+
+       <label> CPF: </label>
+       <input class="texto" type="text" name="cpf" id="cpf" /> <br><br>
+
+        <button type="submit" class="botao"> Consultar  </button>
+        <br><br>
+      </div>
+     </form>
+    </div>
+</div>
+
+  <br>
+<br>
+
+
+{% endblock %}

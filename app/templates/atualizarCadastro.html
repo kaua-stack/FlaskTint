@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+<div>
+  <div class="form">
+    <form action="/atualizarCadastro" method="POST">
+
+        <h3>Atualizar cadastro </h3>
+
+      <div class="flex-column">
+
+        <label> CPF: </label>
+        <input class="texto" type="text" name="cpf" id="cpf" /><br><br>
+
+        <label>Nome: </label>
+        <input class="texto" type="text" name="nome" id="nome" /><br><br>
+
+        <label>Telefone: </label>
+        <input class="texto" type="text" name="telefone" id="telefone"/><br><br>
+
+        <label>Endereço: </label>
+        <input class="texto"  type="text" name="endereco" id="endereco"/> <br><br>
+
+        <button type="submit" class="botao"> Atualizar </button>
+        <br><br>
+      </div>
+    </form>
+ <div/>
+</div>
+
+
+
+{% endblock %}
